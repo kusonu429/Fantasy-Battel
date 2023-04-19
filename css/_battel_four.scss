@@ -1,0 +1,215 @@
+
+.bg-red{
+    background-color:$light-orange-color!important;
+    position: relative;
+
+    &::after{
+        width: 8px;
+        height: 8px;
+        background-color: $light-color;
+        border-radius: 50%;
+        content: "";
+        position: absolute;
+        top: 8px;
+        left:8px;
+    }
+
+   
+}
+
+.bg-red { 
+    transition: all 0.3s linear;
+
+    &:hover{
+        cursor: pointer; 
+        opacity: 0.9;
+    }
+
+}
+
+
+.team_score-sec{
+    @include flex();  
+    @include mx-width();
+    background-color: $secondary-color;
+    padding: 33px 10px;
+    border-radius: 4px;
+
+    .score-sec{
+    @include flex();    
+      text-align: center;  
+
+    }
+
+    .score-sec-2{   
+        background-color: $primary-color;
+        border-radius: 4px; 
+
+      .score_both{
+        text-align: center; 
+        background-color: $primary-color;
+        padding: 10px 30px;
+        border-radius: 4px;  
+      }
+
+     } 
+}
+
+p{
+    color: $light-color;
+    font-size: 12px;
+}
+
+
+.t-icons{
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+    border-radius: 50%;
+    padding:4px; 
+}
+
+.pur-icons{
+  background-color: $light_purple-color;
+  border:2px solid $dark_purple-color;
+  color: $light-color;
+  margin-left: 10px; 
+}
+
+.green-icon{
+    background-color: $light_green-color;
+    border:2px solid $dark_green-color;
+    color: $light-color;
+    margin-right: 10px;
+}
+
+.score_both{
+       color: $light-color;
+}
+
+
+.team_six_sec{
+    @include w-100();
+    margin:10px 0;
+    
+    .team_six_center{
+        @include mx-width();
+        @include flex();
+
+        .team_boths{
+          @include col-50();
+            text-align: center;   
+
+            .batsman-sec{
+                @include w-100(); 
+                @include flex();
+                margin: 5px 0;
+
+
+                .pic-sec{
+                    width: 70%;
+                   @include flex();
+              
+                     
+                    .bats-pic{
+                        width:50%; 
+
+                        img{
+                            width:100%;
+                            max-width: 46px;
+                            height: 53px;
+                        }
+                      
+                    }
+
+                    .text-sec{
+                        color: $light-color;
+                        width:50%; 
+                        
+                        h5{
+                            margin-bottom: 5px;
+                            font-size: 1rem;
+                            font-weight:500;  
+                            text-transform: capitalize;                          
+                        }
+                        
+                        .batsman-link{ 
+                            background-color:$dark_color;
+                            padding:1px 10px;
+                            border-radius: 4px;
+                            font-size: 0.8rem;
+                            font-weight: 400;
+                        } 
+                    } 
+
+                }
+                
+                .score_sec{
+                    width: 25%;                
+
+                    p{
+                        font-size:1.6rem;
+                        font-weight:700;
+                        color: $sky-blue;
+                    }
+                }
+
+            }
+
+        }
+
+
+        .teams_right{
+            position: relative;
+
+            
+            &::after{
+                content:""; 
+                position:absolute; 
+                top: 10px;
+                left:-6px;
+                width: 1px;
+                height:95%;
+                background-color: $sky-blue;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+.veiw_btns_t{
+    @include flex();
+    @include w-100();
+    margin: 15px 0;
+ 
+
+    .btn{   width: 45%; 
+ 
+
+        .btm-btn{ 
+            background-color:$orange-color;     
+            font-size: 1.4rem;
+            padding: 15px 30px;
+            font-weight: 400; 
+            border-radius: 4px;
+            text-transform: capitalize; 
+            transform: all 0.3s ease; 
+            
+            &:hover{
+                cursor: pointer;
+                opacity: 0.9;
+            }
+        }
+
+    }
+
+    
+
+   
+}

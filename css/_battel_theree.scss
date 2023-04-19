@@ -1,0 +1,54 @@
+
+
+
+.team_center_battel{
+    padding:42px 0;    
+
+.team_center_battel_sec{
+
+    .team_center{
+        @include center-item();
+        width: 100%;
+        max-width: 251px;
+        background-color: $brown-color;
+        color: $light-color;
+        text-align: center;
+        padding: 36px 15px;
+        font-size: 12px; 
+        opacity: 0.7;
+       
+
+        p{
+            position: relative;
+            z-index: 999;
+            color: $light-color;
+            font-weight: 400;           
+        }
+    }
+
+
+
+}
+
+}
+
+
+footer{
+    @include flex();
+
+    .veiw_btns{
+       width: 100%;
+       padding:15px 0;
+       @include flex();
+       justify-content: flex-end;
+
+       .v-bts{
+        background-color:$orange-color;
+        max-width: 173px;
+        padding: 15px 40px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        border-radius: 4px;
+       }
+    }
+}

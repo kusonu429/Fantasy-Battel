@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+html{
+    font-size: 10px; 
+}
+
+
+
+// golobal classes mixins  and Variables  
+
+// Variables 
+$primary-color:#002947; 
+$secondary-color:#024B5C;  
+$light-color:#FFFFFF;
+$orange-color:#E47C29; 
+$light_green-color:#20BEB5;
+$dark_green-color:#0D8780;
+$light_purple-color:#82ABFA; 
+$dark_purple-color:#3D65B2; 
+$brown-color:#CF986C;
+$sky-blue:#00B1DB; 
+$w-color:#055668;
+$light-orange-color:#FF4848;
+$dark_color:#000; 
+
+a{
+    text-decoration: none;
+    color: $light-color;
+}
+
+h6{
+    color: $light-color; 
+    font-size: 1.2rem;
+}
+
+// Mixin 
+
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @mixin center-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  @mixin mx-width {
+    width: 100%;
+    max-width:355px; 
+    margin: 0 auto;  
+  }
+
+  @mixin w-100 {
+    width: 100%;
+  }
+
+  @mixin col-50{
+    width: 48.5%
+  }  
+
+  .w-c{
+    background-color:$w-color;
+    font-size: 10px;
+    padding: 4px 15px;
+    border-radius: 4px;
+}
+
+
+body{
+    @include center-item();
+    width: 100%;
+    height: 100vh; 
+ 
+   
+
+
+    .fantasy-battel{ 
+        width: 100%;
+        max-width:375px;      
+        background-color: $primary-color;
+     
+        
+    }
+}
+
+
+@import 'battel_one'; 
+
+@import 'battel_two'; 
+
+@import 'battel_theree';
+
+@import 'battel_four';
